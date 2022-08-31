@@ -1,0 +1,42 @@
+.section-block{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: black;
+    color:white;
+    
+    &__item{
+        counter-increment: positionTop 1;
+        &::before{
+            content: counter(positionTop);
+            font-size: 300px;
+            
+            /* width:100px;
+            counter-increment: positionTop 1; */
+            
+        }
+    }
+    
+}
+h2{
+    color:white;
+}
+img{
+    
+    height:300px;
+}
+@media only screen and (max-width: 600px){
+    .section-block{
+        flex-direction: column;
+        align-items: center;
+        /* img{
+            max-width: 250px;
+        } */
+    }
+}
+
+container-section-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

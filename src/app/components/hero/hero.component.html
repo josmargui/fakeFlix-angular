@@ -1,0 +1,7 @@
+<h2>{{filmsGallery.section}}</h2>
+<div class="section-block">
+    <div class="section-block__item" *ngFor="let film of filmsGallery.films">
+        <!-- <p>{{film.title}}</p> -->
+        <img src={{film.imagen}} alt="{{film.title}}"/>
+    </div>
+</div>

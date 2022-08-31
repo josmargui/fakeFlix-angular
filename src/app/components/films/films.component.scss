@@ -1,0 +1,29 @@
+.section-block{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: black;
+    color:white;
+    &__item{
+        transition: transform .2s;
+        
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        }}
+}
+
+h2{
+    color:white;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px){
+    .section-block{
+        flex-direction: column;
+        align-items: center;
+        img{
+            max-width: 250px;
+        }
+    }
+}
